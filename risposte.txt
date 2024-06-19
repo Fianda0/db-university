@@ -1,0 +1,23 @@
+1 -  Mostro le righe 0 - 24 (160 del totale, La query ha impiegato 0,0004 secondi.) 
+
+2 -  Mostro le righe 0 - 24 (479 del totale, La query ha impiegato 0,0004 secondi.) 
+
+3 - Mostro le righe 0 - 24 (3724 del totale, La query ha impiegato 0,0002 secondi.)
+SELECT * FROM `students` WHERE date_of_birth < '1994-06-19'; 
+
+4 - Mostro le righe 0 - 249 (709 del totale, La query ha impiegato 0,0005 secondi.) 
+
+5 - Mostro le righe 0 - 24 (1116 del totale, La query ha impiegato 0,0003 secondi.)
+SELECT * FROM `exams` WHERE date > '2020-06-20' AND hour > '14:00'; 
+
+6 - Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0,0002 secondi.) 
+
+7 - 12 ho controllato l'ultimo id dei dipartimenti
+
+8 - Mostro le righe 0 - 24 (50 del totale, La query ha impiegato 0,0002 secondi.)
+
+9 - 
+
+10 - UPDATE `teachers` SET `office_number` = '126' WHERE name LIKE 'Pietro' AND surname LIKE 'Rizzo'; 
+
+11 - 
