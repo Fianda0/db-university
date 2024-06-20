@@ -75,3 +75,29 @@ ON course_teacher.course_id = courses.id
 INNER JOIN `teachers`
 ON course_teacher.teacher_id = teachers.id
 WHERE departments.name LIKE '%matematica%';
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+QUERY Group
+
+1- SELECT YEAR(students.enrolment_date) AS Anno, COUNT(*) as Totale_iscrizioni
+FROM `students`
+GROUP BY YEAR(`students`.`enrolment_date`);
+
+2 - SELECT COUNT(*) AS Numero_uffici_insegnanti, office_address
+FROM `teachers`
+GROUP BY office_address;
+
+3 - SELECT courses.name as Corso, AVG(exam_student.vote)
+FROM `courses`
+INNER JOIN `exams`
+ON exams.course_id = courses.id
+INNER JOIN `exam_student`
+ON exam_student.exam_id = exams.id
+GROUP BY courses.name;
+
+4 - SELECT departments.name, COUNT(*)
+FROM `departments`
+INNER JOIN `degrees`
+ON degrees.department_id = departments.id
+GROUP BY departments.name;
