@@ -16,8 +16,8 @@ SELECT * FROM `exams` WHERE date > '2020-06-20' AND hour > '14:00';
 
 8 - Mostro le righe 0 - 24 (50 del totale, La query ha impiegato 0,0002 secondi.)
 
-9 - 
+9 - INSERT INTO `students` (`id`, `degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES (NULL, '29', 'Giuseppe', 'Fiandanese', '2000-10-21', 'FNDGPP00R21F284R', '2024-06-19', '620533', 'fiandanesegiuseppe000@gmail.com');
 
 10 - UPDATE `teachers` SET `office_number` = '126' WHERE name LIKE 'Pietro' AND surname LIKE 'Rizzo'; 
 
-11 - 
+11 - DELETE FROM students WHERE `students`.`id` = 5001
